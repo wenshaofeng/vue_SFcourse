@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link :to="{name:'parent'}">Parent组件</router-link>
+       <button @click="getInfo" :style="{ background: bgColor ,margin:marGin}">请求数据</button>
     </div>
     <keep-alive >
       <router-view />
@@ -14,6 +15,13 @@
 
 <script>
 export default {
+   data () {
+    return {
+      url: '',
+      marGin:'0 20px',
+      bgColor: ''
+    }
+  },
   computed:{
       groups:function (){
         return this.$store.getters.excludeGroups

@@ -258,7 +258,7 @@ export default Mock
 
 ```
 
-## 基本配置讲，跨域配置 
+## 基本配置讲解，跨域配置 
 
 #### vue.config.js配置
 
